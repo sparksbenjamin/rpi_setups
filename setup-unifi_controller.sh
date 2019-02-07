@@ -16,5 +16,5 @@ wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo
 apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50 
 add-apt-repository ppa:webupd8team/java
 apt-get update
-apt-get upgrade
-apt-get install oracle-java8-jdk unifi apt-transport-https
+apt-get -y upgrade
+apt-get -y install oracle-java8-jdk unifi apt-transport-https
