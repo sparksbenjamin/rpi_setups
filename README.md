@@ -8,7 +8,7 @@ List of scripts that will install and setup differnet functions for a Raspberry 
   
   <p>
   <h3>Code:</h3>
-  <code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-unifi_controller.sh" -O setup-unifi_controller.sh && chmod +x setup-unifi_controller.sh && sudo ./setup-unifi_controller.sh && rm -y setup-unifi_controller.sh</code>
+  <code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-unifi_controller.sh" -O setup-unifi_controller.sh && chmod +x setup-unifi_controller.sh && sudo ./setup-unifi_controller.sh && rm setup-unifi_controller.sh</code>
   </p>
   
 <h2>PI-Hole</h2><br />
@@ -17,5 +17,5 @@ List of scripts that will install and setup differnet functions for a Raspberry 
  <br />
   For more information about Pi-Hole check out their website <a href='https://pi-hole.net/' target='_blank'>https://pi-hole.net/</a>
 </p>
-<h3>Code:</h3><code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-pihole.sh" -O setup-pihole.sh && chmod +x setup-pihole.sh && sudo ./setup-pihole.sh && rm -y setup-pihole.sh</code>
+<h3>Code:</h3><code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-pihole.sh" -O setup-pihole.sh && chmod +x setup-pihole.sh && sudo ./setup-pihole.sh && rm setup-pihole.sh</code>
 
