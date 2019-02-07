@@ -10,7 +10,8 @@ then
   echo -e "${RED}#######################################${RESET}"
   exit 1
 fi
-wget -O basic-install.sh https://install.pi-hole.net
+wget -O basic-install.sh "https://install.pi-hole.net"
+chmod +x basic-install.sh
 sudo ./basic-install.sh
 rm basic-install.sh
 wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/pi-hole-configs/pi-hole-update.sh" -O /etc/cron.daily/pi-hole-update.sh
