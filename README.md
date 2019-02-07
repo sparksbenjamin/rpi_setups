@@ -13,7 +13,7 @@ List of scripts that will install and setup differnet functions for a Raspberry 
   
 <h2>PI-Hole</h2><br />
 <p>
-    Since Pi-Hole can not be updated with apt-get, this will add a script to daily cron jobs.  This will ensure that your install stays up-to-date. 
+    Since Pi-Hole can not be updated with apt-get, this will add a script to daily cron jobs.  This will ensure that your install stays up-to-date. Once the install is complete you will need to set your device to be the DNS server in your DHCP settings.  If your DHCP server does not have the option to set the DNS server then you can use the built in DHCP server.
  <br />
   For more information about Pi-Hole check out their website <a href='https://pi-hole.net/' target='_blank'>https://pi-hole.net/</a>
 </p>
