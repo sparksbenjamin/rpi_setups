@@ -17,7 +17,7 @@ List of scripts that will install and setup differnet functions for a Raspberry 
   
   <p>
   <h3>Code:</h3>
-  <code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-unifi_controller.sh" -O setup-unifi_controller.sh && chmod +x setup-unifi_controller.sh && sudo ./setup-unifi_controller.sh && rm setup-unifi_controller.sh</code>
+  <code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-unifi-voip-controller.sh" -O setup-unifi-voip-controller.sh && chmod +x setup-unifi_controller.sh && sudo ./setup-unifi_controller.sh && rm setup-unifi_controller.sh</code>
   </p>
 
 <h2>PI-Hole</h2><br />
