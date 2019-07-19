@@ -10,7 +10,16 @@ List of scripts that will install and setup differnet functions for a Raspberry 
   <h3>Code:</h3>
   <code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-unifi_controller.sh" -O setup-unifi_controller.sh && chmod +x setup-unifi_controller.sh && sudo ./setup-unifi_controller.sh && rm setup-unifi_controller.sh</code>
   </p>
+
+<h2>Unifi VoIP Controller</h2>
+  <p>This will add repos for Ubnt Unifi VoIP controller software and Java.  This setup can be kept up to date by using apt-get.  For more information about Unifi Controller software please view their website <a href='https://www.ui.com/software/' target='_blank'>https://www.ui.com/software/</a>
+  </p>
   
+  <p>
+  <h3>Code:</h3>
+  <code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-unifi_controller.sh" -O setup-unifi_controller.sh && chmod +x setup-unifi_controller.sh && sudo ./setup-unifi_controller.sh && rm setup-unifi_controller.sh</code>
+  </p>
+
 <h2>PI-Hole</h2><br />
 <p>
     Since Pi-Hole can not be updated with apt-get, this will add a script to daily cron jobs.  This will ensure that your install stays up-to-date. Once the install is complete you will need to set your device to be the DNS server in your DHCP settings.  If your DHCP server does not have the option to set the DNS server then you can use the built in DHCP server.
