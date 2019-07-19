@@ -20,8 +20,10 @@ echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/
 echo 'deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list
 apt-get update
 apt-get -y upgrade
+apt --fix-broken install
 #apt-get -y install oracle-java8-jdk
 #apt-get -y install oracle-java8-installer
 apt-get -y --allow-unauthenticated install oracle-java8-installer
 apt-get -y install oracle-java8-set-default
 apt-get -y install oracle-java8-jdk unifi-voip apt-transport-https
+apt --fix-broken install
