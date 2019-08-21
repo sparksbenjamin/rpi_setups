@@ -27,7 +27,7 @@ apt update
 
 #Begin Install
 apt install -y mongodb unifi openjdk-7-jdk
-
+apt install -y openjdk-8-jdk
 #Setup Java Install
 #apt-key adv --recv-key --keyserver keyserver.ubuntu.com EEA14886
 #add-apt-repository ppa:webupd8team/java
