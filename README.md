@@ -2,8 +2,13 @@
 
 List of scripts that will install and setup differnet functions for a Raspberry Pi II.  Please note that these scripts are offered on an as is situation.  I am also not a devolper with any of these systems.  Now that all of that is out of the way if you have a suggested system you would like to have automated for setup and install, let me know and I will see what I can do. 
 
-As Request there is a main script that will guide you to run the correct script.  This means you now only need to remember <bold>1 command to rule them all</bold>
+As Request there is a main script that will guide you to run the correct script.  This means you now only need to remember <bold>1 command to rule them all</bold>.  I hope this makes things a little eaiser, I will still have the commands listed below for direct use if you still need them. 
+<h2>Menu</h2>
+<p>
+  This will serve as a list of options to run different seutps on the PI.  This script does nothing more than provide a list of all the scripts that are provided.  Serving as a shortcut or shorthand to get the installs done that you need. 
+</p>
 <code>
+  wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/menu.sh" -O menu.sh && chmod +x menu.sh && sudo ./menu.sh && rm menu.sh 
 </code>
 
 <h2>Unifi Controller</h2>
