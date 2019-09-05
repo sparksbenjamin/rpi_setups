@@ -1,6 +1,10 @@
-<h1>Raspberry PI II+ Setup Scripts</h1>
+<h1>Raspberry PI Setup Scripts</h1>
 
 List of scripts that will install and setup differnet functions for a Raspberry Pi II.  Please note that these scripts are offered on an as is situation.  I am also not a devolper with any of these systems.  Now that all of that is out of the way if you have a suggested system you would like to have automated for setup and install, let me know and I will see what I can do. 
+
+As Request there is a main script that will guide you to run the correct script.  This means you now only need to remember <bold>1 command to rule them all</bold>
+<code>
+</code>
 
 <h2>Unifi Controller</h2>
   <p>This will add repos for Ubnt Unifi controller software and Java.  This setup can be kept up to date by using apt-get.  For more information about Unifi Controller software please view their website <a href='https://www.ui.com/software/' target='_blank'>https://www.ui.com/software/</a>
