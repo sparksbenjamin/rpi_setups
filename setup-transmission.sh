@@ -26,6 +26,6 @@ sudo apt-get install transmission-daemon
 mkdir -p /media/storage/Torrent_inprogress
 mkdir -p /media/storage/Torrent_complete
 wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/transmission-configs/settings.json" -O /etc/transmission-daemon/settings.json
-sudo chmod a+r /etc/transmission-daemon/settings.json
+sudo chmod 744 /etc/transmission-daemon/settings.json
 sudo usermod -a -G pi debian-transmission
 sudo service transmission-daemon reload
