@@ -22,3 +22,6 @@ then
 fi
 apt update
 apt upgrade
+sudo apt-get install transmission-daemon
+mkdir -p /media/storage/Torrent_inprogress
+mkdir -p /media/storage/Torrent_complete
