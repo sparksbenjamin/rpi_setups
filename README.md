@@ -49,5 +49,5 @@ As Request there is a main script that will guide you to run the correct script.
   Always on Torrent Downloader
 </p>
 <h4>Code:</h4>
-<code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-retropi.sh" -O setup-retropi.sh && chmod +x setup-retropi.sh && sudo ./setup-retropi.sh && rm setup-retropi.sh
+<code>wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-transmission.sh" -O setup-transmission.sh && chmod +x setup-transmission.sh && sudo ./setup-transmission.sh && rm setup-transmission.sh
 </code>
