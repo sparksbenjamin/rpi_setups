@@ -10,8 +10,7 @@ then
   echo -e "${RED}#######################################${RESET}"
   exit 1
 fi
-echo "URL for Kiosk to load. If wanting more than one, use a space between URLs"
-read $URI
+read -p "URL(s) for Kiosk to load: " $URI
 sleep .5
 echo "Changing URL to:$URI"
 wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/web-kiosk-config/kiosk.sh" -O /home/pi/kiosk.sh
