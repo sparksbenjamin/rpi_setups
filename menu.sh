@@ -2,7 +2,7 @@
 # Bash Menu Script Example
 
 PS3='Please enter your choice: '
-options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Quit")
+options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
