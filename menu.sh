@@ -24,6 +24,9 @@ do
 	"Transmission")
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-transmission.sh" -O setup-transmission.sh && chmod +x setup-transmission.sh && sudo ./setup-transmission.sh && rm setup-transmission.sh
 	    ;;
+	"Web Kiosk")
+	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-web-kiosk.sh" -O setup-web-kiosk.sh && chmod +x setup-web-kiosk.sh && sudo ./setup-web-kiosk.sh && rm setup-web-kiosk.sh
+	    ;;
         "Quit")
             break
             ;;
