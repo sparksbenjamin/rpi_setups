@@ -14,5 +14,6 @@ echo "URL for Kiosk to load. If wanting more than one, use a space between URLs"
 read $URI
 wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/web-kiosk-config/kiosk.sh" -O /home/pi/kiosk.sh
 chmod +x /home/pi/kiosk.sh
-#sed -i 's,https://time.is/,$URI,g' /home/pi/kiosk.sh
-
+sed -i "s,https://time.is/,$URI,g" /home/pi/kiosk.sh
+service kiosk stop
+service kiosk start
