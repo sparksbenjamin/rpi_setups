@@ -20,6 +20,11 @@ sudo apt-get upgrade -y
 sudo apt-get install xdotool unclutter sed
 #enable AutoLogin
 [ -e /etc/init.d/lightdm ] && update-rc.d lightdm disable 2
-  sed /etc/inittab -i -e "s/1:2345:respawn:\/sbin\/getty --noclear 38400 tty1/1:2345:respawn:\/bin\/login -f pi tty1 <\/d$
-
+  sed /etc/inittab -i -e "s/1:2345:respawn:\/sbin\/getty" --noclear 38400 tty1/1:2345:respawn:\/bin\/login -f pi tty1 <\/d$
+wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/web-kiosk-config/kiosk.sh" -O /home/pi/kiosk.sh
+chmod +x /home/pi/kiosk.sh
+wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/web-kiosk-config/kiosk.service" -O /lib/systemd/system/kiosk.service
+chmod +x /lib/systemd/system/kiosk.service
+sudo systemctl enable kiosk.service
+sudo systemctl start kiosk.service
 exit
