@@ -10,16 +10,6 @@ then
   echo -e "${RED}#######################################${RESET}"
   exit 1
 fi
-if pgrep -x "gedit" > /dev/null
-then
-  clear
-  echo -e "${RED}#######################################${RESET}"
-  echo -e "${RED}#                                     #${RESET}"
-  echo -e "${RED}#   ${RESET}Known issues with bind9(named) service.   ${RED}#${RESET}"
-  echo -e "${RED}#                                     #${RESET}"
-  echo -e "${RED}#######################################${RESET}"
-  exit 1
-fi
 #clean packages
 sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
 sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
