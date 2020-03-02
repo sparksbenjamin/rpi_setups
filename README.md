@@ -61,5 +61,6 @@ As Request there is a main script that will guide you to run the correct script.
 <p>Once you have your Kiosk setup, recofiguring your kiosk to point to a new URL is as easy as running the code below and providing the URL</p>
 <h4>Code:</h4>
 <code>
+  wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/config-web-kiosk.sh" -O config-web-kiosk.sh && chmod +x config-web-kiosk.sh && sudo ./config-web-kiosk.sh && rm config-web-kiosk.sh
 
 </code>
