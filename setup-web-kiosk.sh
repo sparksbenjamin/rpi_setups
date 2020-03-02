@@ -20,7 +20,16 @@ then
   echo -e "${RED}#######################################${RESET}"
   exit 1
 fi
-curl -sSL https://install.pi-hole.net | bash
-wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/pi-hole-configs/pi-hole-update.sh" -O /etc/cron.daily/pi-hole-update.sh
-chmod +x /etc/cron.daily/pi-hole-update.sh
+#clean packages
+sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
+sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
+sudo apt-get clean
+sudo apt-get autoremove -y
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install xdotool unclutter sed
+#enable AutoLogin
+[ -e /etc/init.d/lightdm ] && update-rc.d lightdm disable 2
+  sed /etc/inittab -i -e "s/1:2345:respawn:\/sbin\/getty --noclear 38400 tty1/1:2345:respawn:\/bin\/login -f pi tty1 <\/d$
+
 exit
