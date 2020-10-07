@@ -14,7 +14,8 @@
 #top_right="screen -dmS top_right sh -c 'omxplayer --win \"640 21 1280 501\" rtsp:// <...cam2_url...> --live'";
 #bottom_left="screen -dmS bottom_left sh -c 'omxplayer --win \"0 522 640 1002\" rtsp:// <...cam3_url...> --live'";
 #bottom_right="screen -dmS bottom_right sh -c 'omxplayer --win \"640 522 1280 1002\" rtsp:// <...cam4_url...> --live$
-hdmi="screen -dmS hdmi sh -c 'omxplayer -p -o hdmi rtsp://10.18.16.2:7447/IxF5BAsSgRFeLLVQ -b --live --fps 30'"
+hdmi="screen -dmS hdmi sh -c 'omxplayer --avdict rtsp_transport:tcp -p -o hdmi rtsp://10.18.16.2:7447/58Eokya4qjSIIOFo -b --live --fps 24 -n -1
+'"
 # Camera Feed Names
 # (variable names from above, separated by a space)
 #camera_feeds=(top_left top_right bottom_left bottom_right)
