@@ -18,5 +18,7 @@ sudo apt-get autoremove -y
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install screen
+sudo wget   /etc/init.d/displaycameras
+sudo chmod 755 /etc/init.d/displaycameras
 
 exit
