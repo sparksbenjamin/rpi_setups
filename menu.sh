@@ -2,7 +2,7 @@
 # Bash Menu Script Example
 
 PS3='Please enter your choice: '
-options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Quit")
+options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Home-Assistant" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -25,6 +25,9 @@ do
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-transmission.sh" -O setup-transmission.sh && chmod +x setup-transmission.sh && sudo ./setup-transmission.sh && rm setup-transmission.sh
 	    ;;
 	"Web Kiosk")
+	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-web-kiosk.sh" -O setup-web-kiosk.sh && chmod +x setup-web-kiosk.sh && sudo ./setup-web-kiosk.sh && rm setup-web-kiosk.sh
+	    ;;
+	"Home-Assistant"
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-web-kiosk.sh" -O setup-web-kiosk.sh && chmod +x setup-web-kiosk.sh && sudo ./setup-web-kiosk.sh && rm setup-web-kiosk.sh
 	    ;;
         "Quit")
