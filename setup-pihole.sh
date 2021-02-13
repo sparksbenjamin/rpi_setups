@@ -25,4 +25,5 @@ sudo wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/pi
 chmod +x /etc/cron.daily/pi-hole-update.sh
 sudo apt -y install unbound
 sudo wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/pi-hole-configs/unbound.conf" -O /etc/unbound/unbound.conf.d/pi-hole.conf
+sudo service unbound restart
 exit
