@@ -23,5 +23,5 @@ fi
 curl -sSL https://install.pi-hole.net | bash
 wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/pi-hole-configs/pi-hole-update.sh" -O /etc/cron.daily/pi-hole-update.sh
 chmod +x /etc/cron.daily/pi-hole-update.sh
-sudo apt install unbound
+sudo apt -y install unbound
 exit
