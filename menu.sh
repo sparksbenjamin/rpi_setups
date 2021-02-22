@@ -1,6 +1,10 @@
 #!/bin/bash
 # Bash Menu Script Example
-
+echo -e "${GREEN}#######################################${RESET}"
+echo -e "${GREEN}#                                     #${RESET}"
+echo -e "${GREEN}#   ${RESET}Main Menu   ${GREEN}#${RESET}"
+echo -e "${GREEN}#                                     #${RESET}"
+echo -e "${GREEN}#######################################${RESET}"
 PS3='Please enter your choice: '
 options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Home-Assistant" "Quit")
 select opt in "${options[@]}"
