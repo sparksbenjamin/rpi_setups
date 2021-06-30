@@ -35,7 +35,7 @@ do
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-home-assistant.sh" -O setup-web-kiosk.sh && chmod +x setup-web-kiosk.sh && sudo ./setup-web-kiosk.sh && rm setup-web-kiosk.sh
 	    ;;
 	"Thin-Client")
-	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-home-assistant.sh" -O setup-web-kiosk.sh && chmod +x setup-web-kiosk.sh && sudo ./setup-web-kiosk.sh && rm setup-web-kiosk.sh
+	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-rdp-thinclient.sh" -O setup.sh && chmod +x setup.sh && sudo ./setup.sh && rm -f setup.sh
 	    ;;
         "Quit")
             break
