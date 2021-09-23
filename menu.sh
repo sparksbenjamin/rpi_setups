@@ -1,50 +1,7 @@
 #!/bin/bash
 # Bash Menu Script Example
 
-echo -e "${GREEN}
-                     sssss:Sss:Sss
-                 ss:===:Ssss:Ssss:Sss:s
-  ____________ sss:==:Ss# X Ss:Sss:Ssss:Sss
-  ````\\\\\\\\\~~~ss===s X+X S:Sss:Ss:Sssss:Ss
-           vvvv ==== ss   X S:Sss:Ss :Ss:Ssss:Sss
-          vv  v ====  s  /   ss:Sss Sss:Ss:Ssss:Sss:s
-           vvv          X     ss:S s:S s:Sss:Sssss:Sss
-            u     __   X+X   s:S s:Ss :Sss Ss:Ss s:Sssss
-            uu   /@@    X       s:Ss Ssss ss:Ss sss:Ssss:s
-             uu         X         s :Sss s:Sss ss:Sssssss:s
-               u       X+X      )  Ssss sssss Ssssss :Ssssss:
-               u        X      ) \  S: sss:S ssss:S sss:S :sss
-               u       /      /   `\  Ssss:  Sss:s  ssSs:  sssss
-               uu     X      u      \  Ss     Sss    Sss     Ssss_
-               u @@) (_)   u'        \ s      ss      s        S  \_
-               \u    u u  u           \        s
-                \uuu/  uu/             \
-                                        |
-                                        |
-                                        /
-                                       /
-                        __________    |
-                      ./          \.  /
-                     /              \|
-                    /
-                   /                                   /
-                  /                                  ./
-                 /         /~~~\                    /_______________
-                /         /    /\__________________/
-               /         /    /                 /
-              /         /    /                /
-             (         /    /             ../
-             (        /    /           ../
-              \       (   /          ./
-               \~~~~~~~\ /         ./
-                \_______\         /
-                        (        (
-                         \        \
-                          \        \
-                           \        (
-                            \~~~~~~~~\
-                             \________\
-"
+
 
 echo -e "${GREEN}#######################################${RESET}"
 echo -e "${GREEN}#                                     #${RESET}"
@@ -83,7 +40,9 @@ do
 	"Thin-Client")
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-rdp-thinclient.sh" -O setup.sh && chmod +x setup.sh && sudo ./setup.sh && rm -f setup.sh
 	    ;;
-	
+	"Screenly OSE w/ SOMO")
+	    bash <(curl -sL https://www.screenly.io/install-ose.sh) && bash <(curl -sL https://git.io/Jf900)
+	    ;;
         "Quit")
             break
             ;;
