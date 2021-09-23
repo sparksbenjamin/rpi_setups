@@ -40,6 +40,9 @@ do
 	"Thin-Client")
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-rdp-thinclient.sh" -O setup.sh && chmod +x setup.sh && sudo ./setup.sh && rm -f setup.sh
 	    ;;
+	"Quit")
+	 	exit
+		;;
     esac
 done
 
