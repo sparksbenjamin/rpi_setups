@@ -10,7 +10,7 @@ echo -e "${GREEN}#                                     #${RESET}"
 echo -e "${GREEN}#######################################${RESET}"
 PS3='Please enter your choice: '
 options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Home-Assistant" "Thin-Client" "Screenly-SOMO" "Quit")
-select opt in "${options[@]} exit"
+select opt in "${options[@]}"
 do
     case $opt in
         "Unifi Controller")
