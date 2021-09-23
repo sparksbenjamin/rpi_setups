@@ -39,7 +39,7 @@ do
 	    ;;
 	"Screenly OSE")
 	    bash <(curl -sL https://www.screenly.io/install-ose.sh) | bash <(curl -sL https://git.io/Jf900)
-	    
+	    ;;
         "Quit")
             break
             ;;
