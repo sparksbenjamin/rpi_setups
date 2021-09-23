@@ -9,7 +9,7 @@ echo -e "${GREEN}#   ${RESET}Main Menu   ${GREEN}#${RESET}"
 echo -e "${GREEN}#                                     #${RESET}"
 echo -e "${GREEN}#######################################${RESET}"
 PS3='Please enter your choice: '
-options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Home-Assistant" "Thin-Client" "Quit")
+options=("Unifi Controller" "Unifi VoIP Controller" "PI-Hole" "RetroPI" "Transmission" "Web Kiosk" "Home-Assistant" "Thin-Client" "Screenly-SOMO" "Quit")
 select opt in "${options[@]} exit"
 do
     case $opt in
@@ -40,15 +40,13 @@ do
 	"Thin-Client")
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-rdp-thinclient.sh" -O setup.sh && chmod +x setup.sh && sudo ./setup.sh && rm -f setup.sh
 	    ;;
-	"Screenly w/ SOMO")
+	"Screenly-SOMO")
 	    bash <(curl -sL https://www.screenly.io/install-ose.sh) | bash <(curl -sL https://git.io/Jf900)
 	    ;;
 	"Quit")
 	    break
 	     ;;
-	*)		
-			echo "Please make a selection:"
-			;;	
+
     esac
 done
 
