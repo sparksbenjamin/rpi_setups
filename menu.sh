@@ -1,33 +1,26 @@
-#!/bin/bash
+title="Select example"
+prompt="Pick an option:"
+options=("A" "B" "C")
 
-HEIGHT=15
-WIDTH=40
-CHOICE_HEIGHT=4
-BACKTITLE="Rpi Setup Menu"
-TITLE="Setup Options"
-MENU="Choose one of the following pre-configured setups:"
+echo "$title"
+PS3="$prompt "
+select opt in "${options[@]}" "Quit"; do 
+    case "$REPLY" in
+    1) echo "You picked $opt which is option 1";;
+    2) echo "You picked $opt which is option 2";;
+    3) echo "You picked $opt which is option 3";;
+    $((${#options[@]}+1))) echo "Goodbye!"; break;;
+    *) echo "Invalid option. Try another one.";continue;;
+    esac
+done
 
-OPTIONS=(1 "PI-Hole"
-         2 "Screenly-SOMO"
-         3 "Exit")
-
-CHOICE=$(dialog --clear \
-                --backtitle "$BACKTITLE" \
-                --title "$TITLE" \
-                --menu "$MENU" \
-                $HEIGHT $WIDTH $CHOICE_HEIGHT \
-                "${OPTIONS[@]}" \
-                2>&1 >/dev/tty)
-
-clear
-case $CHOICE in
-        1)
-            bash <(curl -sL https://git.io/JzVsP)
-            ;;
-        2)
-            bash <(curl -sL https://www.screenly.io/install-ose.sh) ; bash <(curl -sL https://git.io/Jf900)
-            ;;
-        3)
-            break
-            ;;
-esac
+while opt=$(zenity --title="$title" --text="$prompt" --list \
+                   --column="Options" "${options[@]}")
+do
+    case "$opt" in
+    "${options[0]}") zenity --info --text="You picked $opt, option 1";;
+    "${options[1]}") zenity --info --text="You picked $opt, option 2";;
+    "${options[2]}") zenity --info --text="You picked $opt, option 3";;
+    *) zenity --error --text="Invalid option. Try another one.";;
+    esac
+done
