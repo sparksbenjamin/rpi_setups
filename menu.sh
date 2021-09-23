@@ -41,7 +41,7 @@ do
 	    wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/setup-rdp-thinclient.sh" -O setup.sh && chmod +x setup.sh && sudo ./setup.sh && rm -f setup.sh
 	    ;;
 	"Screenly-SOMO")
-	    bash <(curl -sL https://www.screenly.io/install-ose.sh) | bash <(curl -sL https://git.io/Jf900)
+	    bash <(curl -sL https://www.screenly.io/install-ose.sh) ; bash <(curl -sL https://git.io/Jf900)
 	    ;;
 	"Quit")
 	    break
