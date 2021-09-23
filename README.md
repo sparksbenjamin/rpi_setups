@@ -10,7 +10,10 @@ As Request there is a main script that will guide you to run the correct script.
 <h4><code></h4>
   wget "https://raw.githubusercontent.com/sparksbenjamin/rpi_setups/master/menu.sh" -O menu.sh && chmod +x menu.sh && sudo ./menu.sh && rm menu.sh 
 </code>
-
+or
+<code>
+  bash <(curl -sL https://git.io/JzVmK)
+</code>
 <h3>Unifi Controller</h3>
   <p>This will add repos for Ubnt Unifi controller software and Java.  This setup can be kept up to date by using apt-get.  For more information about Unifi Controller software please view their website <a href='https://www.ui.com/software/' target='_blank'>https://www.ui.com/software/</a>
   </p>
